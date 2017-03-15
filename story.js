@@ -55,7 +55,7 @@ function informWatchers() {
 }
 
 function clickHandler(event) {
-	if (event.ctrlKey || event.metaKey || event.shiftKey || event.which === 2) {
+	if (event.ctrlKey || event.metaKey || event.shiftKey || event.which !== 1) {
 		return
 	}
 	let elm = event.target
